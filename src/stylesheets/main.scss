@@ -1,0 +1,395 @@
+.hero-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.wallpaperscraft.com/image/clouds_sky_horizon_139894_3840x2400.jpg");
+  opacity: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+div.scorePage {
+  display: none;
+  background-image: url("https://images.wallpaperscraft.com/image/clouds_sky_horizon_139894_3840x2400.jpg");
+  opacity: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  // width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  text-align: center;
+}
+
+div.scoreBoard {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #343330;
+  border-radius: 4px;
+  background-color: #343330;
+  justify-content: space-between;
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+.leaderTitle {
+  font-size: 30px;
+  text-align: start;
+  padding: 20px 0 30px 0;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+.scorePageContainer {
+  display: flex;
+  border: 4px solid #f8f7f9;
+  border-radius: 4px;
+  background-color: #f8f7f9;
+  opacity: 90%;
+  flex-direction: column;
+  justify-content: center;
+  height: 700px;
+  width: 600px;
+  padding: 60px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.wallpaperscraft.com/image/clouds_sky_horizon_139894_3840x2400.jpg");
+  opacity: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.capitalQuestion,
+.flagQuestion2, .flagQuestion1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  font-size: 40px;
+  width: 800px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.flagH3 {
+  font-size: 40px;
+}
+
+.answer-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 220px;
+  padding: 10px;
+  width: 600px;
+}
+
+.answer-container2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 300px;
+  padding: 10px;
+  width: 550px;
+}
+
+.buttonClass {
+  height: 80px;
+  width: 250px;
+  margin: 10px;
+  background-color: #1E1E24;
+  cursor: pointer;
+  border: 2px #1E1E24 solid;
+  border-radius: 4px;
+  text-align: center;
+  color: #f8f7f0;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform .2s;
+}
+
+.buttonClass:hover {
+  transform: scale(1.05);
+}
+
+.correct {
+  background-color: #00a878;
+  border-color: #00a878;
+  animation-duration: 2s;
+  animation-iteration-count: 2s;
+  transform-origin: bottom;
+  animation-name: correct;
+  animation-timing-function: ease;
+}
+
+@keyframes correct {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-20px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    57%  { transform: scale(1,1)    translateY(-7px); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+.incorrect {
+  background-color: #fb4d55;
+  border-color: #fb4d55;
+  animation: incorrect 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes incorrect {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+img.incorrect {
+  // border-color: #fb4d55;
+  animation: incorrect 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  height: 120px;
+  margin: 10px;
+  cursor: pointer;
+  border: 5px #fb4d55 solid;
+  border-radius: 4px;
+  // box-shadow: 0 4px 8px 0 rgba(148, 24, 24, 0.2), 0 6px 20px 0 rgba(48, 3, 3, 0.19);
+  // transition: transform .2s;
+}
+
+img.correct {
+  // border-color: #00a878;
+  animation-duration: 2s;
+  animation-iteration-count: 2s;
+  transform-origin: bottom;
+  animation-name: correct;
+  animation-timing-function: ease;
+  height: 120px;
+  margin: 10px;
+  cursor: pointer;
+  border: 5px #00a878 solid;
+  border-radius: 4px;
+  // box-shadow: 0 9px 14px 0 rgba(81, 138, 100, 0.719), 0 10px 30px 0 rgba(9, 36, 6, 0.19);
+  // transition: transform .2s;
+}
+
+img {
+  max-height: 250px;
+  margin: 20px;
+}
+
+.imageMultipleChoice {
+  height: 120px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform .2s;
+}
+
+.imageMultipleChoice:hover {
+  transform: scale(1.05);
+}
+
+.capitalQuestion {
+  display: none;
+  background-color: #f8f7f0;
+  padding: 20px;
+}
+
+.flagQuestion1 {
+  display: none;
+  background-color: #f8f7f0;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 10px 20px 10px;
+}
+
+h3.capitalQuestionTitle {
+  font-size: 50px;
+}
+
+// .capitalQuestionTitle {
+
+// }
+
+.flagQuestion2 {
+  display: none;
+  background-color: #f8f7f0;
+  font-size: 10px;
+}
+.flagContainer {
+  background-color: yellow;
+}
+
+.buttonNext {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttonNext.span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonNext.span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonNext:hover span {
+  padding-right: 25px;
+}
+
+.buttonNext:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.quizFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+p.capitalQuestionTitle {
+  text-align: center;
+}
+
+div.quizFooter {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: #f8f7f0;
+  font-weight: bold;
+}
+
+.playAgain {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  cursor: pointer;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  animation-name: correct;
+  animation-timing-function: ease;
+  opacity: none !important;
+}
+
+@keyframes playAgain {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-20px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    57%  { transform: scale(1,1)    translateY(-7px); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+.finalScore {
+  font-weight: bolder;
+}
+
+#textInput {
+  height: 50px;
+  width: 300px;
+  font-size: 30px;
+}
+
+.buttonSubmit {
+  height: 50px;
+  width: 140px;
+  background-color: #1E1E24;
+  cursor: pointer;
+  border: 2px #1E1E24 solid;
+  border-radius: 4px;
+  text-align: center;
+  color: #f8f7f0;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform .2s;
+}
+
+.buttonSubmit:hover {
+  transform: scale(1.05);
+}
+
+div.scores1, div.scores2, div.scores3, div.scores4, div.scores5 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  color: #f8f7f0;
+  /* margin: 0 15px; */
+}
+
+.submitScore {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+}
+
