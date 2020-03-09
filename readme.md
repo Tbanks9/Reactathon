@@ -1,4 +1,6 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Software Engineneering Immersive: Project 2
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) 
+
+# Software Engineneering Immersive: Project 2
 
 This is my second project completed during the General Assembly Software Engineering Immersive course (Week 6). This project was built in collaboration with Nick Dolan (https://github.com/Nicolas-Dolan) as part of our two-day long "Reactathon".
 
@@ -8,27 +10,21 @@ This is my second project completed during the General Assembly Software Enginee
 
 This project is a geography-based quiz game, built using REST COUNTRIES API (https://restcountries.eu/). The user is asked a total of ten geography-based questions, with four possible answers to choose from. You also have the choice of submitting your score at the end of each game.
 
----
-
 ## Built Using
 
 1. HTML5
 2. SCSS
-  * Animation
-  * Bulma
+   * Animation
+   * Bulma
 3. JavaScript
-  * ECMAScript6
-  * React
-  * Axios
+   * ECMAScript6
+   * React
+   * Axios
 4. GitHub
-
----
 
 ## Deployment
 
 Geography Genius is deployed on Heroku, and can be found here: https://geography-genius.herokuapp.com/
-
----
 
 ## Getting Started
 
@@ -41,8 +37,6 @@ $ npm i
 $ npm run serve
 <!-- Check the console for any issues, and if there are, check the package.json for any dependancies missing  -->
 ```
-
----
 
 ## Website Architecture
 
@@ -152,8 +146,6 @@ We decided it would be a nice touch to add some simple colours and animations to
 Below is a still image of this taking place:
 
 ![Quiz screenshot 2](/src/assets/Geography-genius-2.png)
-
----
 
 ## Score Tally and Leaderboard
 
