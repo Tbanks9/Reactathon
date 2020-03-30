@@ -1,6 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) 
 
-# Software Engineneering Immersive: Project 2
+# Software Engineering Immersive: Project 2
 
 This is my second project completed during the General Assembly Software Engineering Immersive course (Week 6). This project was built in collaboration with Nick Dolan (https://github.com/Nicolas-Dolan) as part of our two-day long "Reactathon".
 
@@ -56,7 +56,7 @@ Once you land on the quiz (Questions.js), a function runs to get the data from t
 2. **What is the flag of (Randomly generated country name)?** (Displays the country name in question, with four choices of flag images to choose from)
 3. **What is the capital of (Randomly generated country name)?** (Displays the country name in question, with four choices of Capital cities to choose from)
 
-Below is the switch statement which randomly generates the questions, plus a screenshot of a flag question:
+Below is the switch statement which randomly generates the questions, plus a screenshot of an example flag question:
 
 ```
   selectQuestion(response) {
