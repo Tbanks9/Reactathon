@@ -58,7 +58,7 @@ Once you land on the quiz (Questions.js), a function runs to get the data from t
 
 Below is the switch statement which randomly generates the questions, plus a screenshot of an example flag question:
 
-```
+``` javascript
   selectQuestion(response) {
     const random = Math.floor(Math.random() * 3)
     console.log(random)
@@ -85,7 +85,7 @@ Below is the switch statement which randomly generates the questions, plus a scr
 
 Below is an excerpt of code from the Questions page. If the switch statement picks the **'capitalsQuestion'**, a corresponding country and capital are filtered as the correct answer. Three randomly generated incorrect capital cities are also included in the multiple choice:
 
-```
+``` javascript
   async componentDidMount() {
     try {
       const response = await axios.get('https://restcountries.eu/rest/v2/all')
@@ -153,7 +153,7 @@ With each question answered right or wrong, the total score is tallied out of te
 
 Here are the functions that carry out this action: 
 
-```
+``` javascript
   handleNextPage = () => {
     document.querySelector('div.flagQuestion2').style.display = 'none'
     document.querySelector('div.capitalQuestion').style.display = 'none'
@@ -209,7 +209,7 @@ In terms of the leaderboard feature, we also would've liked to write this in a c
 
 Here is a snippet of the leaderboard function:
 
-```
+``` javascript
  generateLeaderBd() {
     const leaderboard = Object.entries(this.state.myStorage).map((element) => {
       return element = [element[0], parseInt(element[1])]
