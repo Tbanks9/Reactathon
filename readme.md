@@ -237,7 +237,7 @@ Here is a snippet of the leaderboard function:
 
   ## Key Learnings
 
-  React was a fairly new technology to us at this time, so not being afriad to try things and make mistakes was a big key learning. Since we had less than two days to complete this project, we had to quickly decide what was a priority and what wasn't. I learnt a lot about how to effectively manage my time, and how to communicate with my partner when something was beginning to look unrealistic, or was taking too much valuable time.
+  React was a fairly new technology to us at this time, so not being afraid to try things and make mistakes was a big key learning. Since we had less than two days to complete this project, we had to quickly decide what was a priority and what wasn't. I learnt a lot about how to effectively manage my time, and how to communicate with my partner when something was beginning to look unrealistic, or was taking too much valuable time.
 
   ---
 
