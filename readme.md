@@ -231,6 +231,14 @@ Here is a snippet of the leaderboard function:
   }
   ```
 
+  ## Wins
+
+  This was my first time pair-programming, and I was really pleased with how well we worked together and how well our project materialised. Whilst we both contributed to all aspects of the code, given the short timeframe we naturally played to our strengths. My partner took ownership of a lot of the logic involved in the game, whilst I primarily focused on the user journey, visuals and animations.
+
+  ## Key Learnings
+
+  React was a fairly new technology to us at this time, so not being afriad to try things and make mistakes was a big key learning. Since we had less than two days to complete this project, we had to quickly decide what was a priority and what wasn't. I learnt a lot about how to effectively manage my time, and how to communicate with my partner when something was beginning to look unrealistic, or was taking too much valuable time.
+
   ---
 
   ## Authors
